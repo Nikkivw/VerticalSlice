@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public float speed;
     public float range;
+    [SerializeField] private float lungerange;
     [SerializeField] private Transform target;
     
     
@@ -18,6 +19,16 @@ public class Enemy : MonoBehaviour
     {
         
         float dist = Vector3.Distance(target.position, transform.position);
+        if (dist <= lungerange)
+        {
+            transform.LookAt(target);
+            speed = 10;
+            transform.position += transform.forward * speed * Time.deltaTime;
+            if(dist <= 0.1f)
+            {
+                Destroy(gameObject);
+            }
+        }
         if (dist <= range)
         {
             speed = 5;
