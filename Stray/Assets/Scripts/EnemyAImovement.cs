@@ -16,12 +16,12 @@ public class EnemyAImovement : MonoBehaviour
 
     void Update()
     {
-        GetComponent<NavMeshAgent>().speed = 5;
+        GetComponent<NavMeshAgent>().speed = 3;
         enemyMesh.SetDestination(playerObj.position);
         float dist = Vector3.Distance(playerObj.position, transform.position);
         if(dist <= 5f)
         {
-            GetComponent<NavMeshAgent>().speed = 20;
+            GetComponent<NavMeshAgent>().speed = 9;
         }
     }
 }
