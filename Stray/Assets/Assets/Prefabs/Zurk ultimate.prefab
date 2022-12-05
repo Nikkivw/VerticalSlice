@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9064948735284591532}
   - component: {fileID: 9064948735284591527}
   - component: {fileID: 9064948735284591528}
+  - component: {fileID: -5074602593181362463}
   m_Layer: 0
   m_Name: Zurk ultimate
   m_TagString: Untagged
@@ -152,3 +153,20 @@ NavMeshAgent:
   m_BaseOffset: 0.7021065
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!191 &-5074602593181362463
+OffMeshLink:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145959533844597940}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_AreaIndex: 0
+  m_AgentTypeID: 0
+  m_Start: {fileID: 0}
+  m_End: {fileID: 0}
+  m_CostOverride: -1
+  m_BiDirectional: 1
+  m_Activated: 1
+  m_AutoUpdatePositions: 1
