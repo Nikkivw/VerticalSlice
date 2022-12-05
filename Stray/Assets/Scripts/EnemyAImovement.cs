@@ -18,9 +18,12 @@ public class EnemyAImovement : MonoBehaviour
     {
         GetComponent<NavMeshAgent>().speed = 3;
         enemyMesh.SetDestination(playerObj.position);
+        
         float dist = Vector3.Distance(playerObj.position, transform.position);
+
         if(dist <= 5f)
         {
+            transform.LookAt(playerObj);
             GetComponent<NavMeshAgent>().speed = 9;
         }
     }
