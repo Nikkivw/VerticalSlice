@@ -16,7 +16,7 @@ public class EnemyAImovement : MonoBehaviour
 
     void Update()
     {
-        GetComponent<NavMeshAgent>().speed = 3;
+        GetComponent<NavMeshAgent>().speed = 2;
         enemyMesh.SetDestination(playerObj.position);
         
         float dist = Vector3.Distance(playerObj.position, transform.position);
@@ -24,7 +24,7 @@ public class EnemyAImovement : MonoBehaviour
         if(dist <= 5f)
         {
             transform.LookAt(playerObj);
-            GetComponent<NavMeshAgent>().speed = 9;
+            GetComponent<NavMeshAgent>().speed = 6;
         }
     }
 }
