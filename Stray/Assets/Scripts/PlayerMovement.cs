@@ -23,22 +23,22 @@ public class PlayerMovement : MonoBehaviour
         velocity.y = 0;
         if (Input.GetKey(KeyCode.A))
         {
-            velocity.z = -speed;
+            velocity.x = speed;
             
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            velocity.z = speed;
+            velocity.x = -speed;
             
         }
         if (Input.GetKey(KeyCode.W))
         {
-            velocity.x = -speed;
+            velocity.z = -speed;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            velocity.x = speed;
+            velocity.z = speed;
         }
         if (Input.GetKey(KeyCode.Space))
         {
