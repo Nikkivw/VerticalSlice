@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Vector3 velocity;
-    [SerializeField] private int speed;
+    [SerializeField] public int speed;
     public Transform startpoint;
     public Transform endpoint;
     // Start is called before the first frame update
