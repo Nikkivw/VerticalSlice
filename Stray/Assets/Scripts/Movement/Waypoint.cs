@@ -24,6 +24,7 @@ public class Waypoint : MonoBehaviour
         target = pointsJumpOne[waypointindex1]; 
             if (collision.gameObject.tag == moveTag && Input.GetKeyDown(KeyCode.Space))
             {
+            Debug.Log("Jump");
                 pointsJumpOne = new Transform[transform.childCount];
                 for (int i = 0; i < pointsJumpOne.Length; i++)
                 {
@@ -34,9 +35,9 @@ public class Waypoint : MonoBehaviour
                 if (Vector3.Distance(transform.position, target.position) <= 0.3f)
                 {
                     GetNextWaypoint();
-                    if (waypointindex1 == 5)
+                    if (waypointindex1 == 6)
                     {
-                        target = player;
+                        
                     }
                 }
             }
