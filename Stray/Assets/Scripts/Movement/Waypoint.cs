@@ -10,8 +10,7 @@ public class Waypoint : MonoBehaviour
     public Transform[] pointsJumpFour;
     [SerializeField] private Transform player;
     private Transform target;
-    private int waypointindex1 = 0;
-    private string moveTag = "Jump1";
+    private int waypointindex1 = -1;
 
     // Start is called before the first frame update
     void Start()
@@ -22,28 +21,20 @@ public class Waypoint : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         target = pointsJumpOne[waypointindex1]; 
-            if (collision.gameObject.tag == moveTag && Input.GetKeyDown(KeyCode.Space))
+            if (collision.gameObject.name == "cat" && Input.GetKeyDown(KeyCode.Space))
             {
+                Debug.Log("test");
+                waypointindex1 = 0;
                 pointsJumpOne = new Transform[transform.childCount];
                 for (int i = 0; i < pointsJumpOne.Length; i++)
                 {
                     pointsJumpOne[i] = transform.GetChild(i);
-                }
-                Vector3 dir = target.position - transform.position;
-                transform.Translate(dir.normalized * GetComponent<PlayerMovement>().speed * Time.deltaTime, Space.World);
-                if (Vector3.Distance(transform.position, target.position) <= 0.3f)
-                {
-                    GetNextWaypoint();
-                    if (waypointindex1 == 5)
-                    {
-                        target = player;
-                    }
-                }
+                }   
             }
     }
+
     void GetNextWaypoint()
-    {
-        
+    {  
         if (waypointindex1 + 1 < pointsJumpOne.Length)
         {
             waypointindex1++;
@@ -51,9 +42,24 @@ public class Waypoint : MonoBehaviour
 
         }
     }
-        void Update()
+     void Update()
+     {
+        Jump1();
+     }
+
+    private void Jump1()
     {
-        
+        target = pointsJumpOne[waypointindex1];
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * GetComponent<PlayerMovement>().speed * Time.deltaTime, Space.World);
+        if (Vector3.Distance(transform.position, target.position) <= 0.3f)
+        {
+            GetNextWaypoint();
+            if (waypointindex1 == 5)
+            {
+                target = player;
+            }
+        }
     }
     
 
