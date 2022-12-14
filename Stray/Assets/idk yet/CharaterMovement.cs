@@ -23,7 +23,7 @@ public class CharaterMovement : MonoBehaviour
     // Awake is called when the script instance is being loaded
     void Awake()
     {
-        Debug.Log("Hallo");
+        //Debug.Log("Hallo");
         input = new PlayerInput();
 
         
