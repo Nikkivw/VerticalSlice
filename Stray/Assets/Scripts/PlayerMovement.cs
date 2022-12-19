@@ -6,8 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector3 velocity;
     [SerializeField] public int speed;
-    public Transform startpoint;
-    public Transform endpoint;
     // Start is called before the first frame update
     void Start()
     {
