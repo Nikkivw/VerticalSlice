@@ -35,6 +35,7 @@ public class WaypointFollower : MonoBehaviour
         if(followingWaypoints == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<PlayerMovement>().enabled = false;
             checkwaypoint();
         }
         
@@ -55,6 +56,7 @@ public class WaypointFollower : MonoBehaviour
         {
             followingWaypoints = false;
             GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<PlayerMovement>().enabled = true;
             waypointIndex = 0;
             
         }
