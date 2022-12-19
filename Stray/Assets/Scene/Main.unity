@@ -5550,8 +5550,9 @@ GameObject:
   m_Component:
   - component: {fileID: 999255645}
   - component: {fileID: 999255648}
-  - component: {fileID: 999255647}
   - component: {fileID: 999255646}
+  - component: {fileID: 999255649}
+  - component: {fileID: 999255650}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Player
@@ -5589,7 +5590,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.72, y: 0.33, z: 0.19}
   m_Center: {x: 0.06, y: 0.17, z: 0}
---- !u!54 &999255647
+--- !u!114 &999255648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999255644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69dea47363d399498c099f63f42cc8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+--- !u!114 &999255649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999255644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90d818df3b3b044a8fced320eb158e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1622402966}
+  - {fileID: 279679111}
+  - {fileID: 1244956427}
+  - {fileID: 611349642}
+  - {fileID: 1388594588}
+  speed: 2
+  Cat: {fileID: 999255644}
+  followingWaypoints: 0
+--- !u!54 &999255650
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5605,19 +5640,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &999255648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999255644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69dea47363d399498c099f63f42cc8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!1 &1043297587
 GameObject:
   m_ObjectHideFlags: 0
@@ -11129,7 +11151,7 @@ GameObject:
   - component: {fileID: 968444838}
   m_Layer: 0
   m_Name: cat
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
