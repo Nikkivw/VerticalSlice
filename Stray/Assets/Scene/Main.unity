@@ -4868,31 +4868,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &968444837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149048964814}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0617866c8da96148829ce79aa9e7979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &968444838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149048964814}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69dea47363d399498c099f63f42cc8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!65 &968444840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5167,8 +5142,8 @@ MonoBehaviour:
   - {fileID: 1244956427}
   - {fileID: 611349642}
   - {fileID: 1388594588}
-  speed: 2
   Cat: {fileID: 999255644}
+  speed: 2
   followingWaypoints: 0
 --- !u!54 &999255650
 Rigidbody:
@@ -10029,8 +10004,6 @@ GameObject:
   - component: {fileID: 543450652765072500}
   - component: {fileID: 968444840}
   - component: {fileID: 968444836}
-  - component: {fileID: 968444837}
-  - component: {fileID: 968444838}
   m_Layer: 0
   m_Name: cat
   m_TagString: Untagged

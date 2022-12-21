@@ -6,7 +6,7 @@ public class WaypointFollower : MonoBehaviour
 {
     // Array of waypoints to follow
     public Transform[] waypoints;
-
+    public GameObject Cat;
     // Speed at which to move
     public float speed = 2.0f;
 
@@ -19,39 +19,44 @@ public class WaypointFollower : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // If the player enters the collider, start following the waypoints
-        if (other.gameObject.tag == "Player") 
+        if (other.gameObject.tag == "Jump1") 
         {
             //Debug.Log("Test");
             followingWaypoints = true;
+            
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // If the player is not following waypoints, do nothing
-        if (!followingWaypoints)
+        if(followingWaypoints == true)
         {
-
+            GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<PlayerMovement>().enabled = false;
+            checkWaypoint();
         }
-
-        // If the player has reached the end of the waypoints, allow them to move freely
-        if (waypointIndex >= waypoints.Length)
-        {
-            followingWaypoints = false;
-            return;
-        }
-
+        
+    }
+    void checkWaypoint()
+    {
         // Get the current waypoint
         Transform targetWaypoint = waypoints[waypointIndex];
-
         // Move towards the waypoint
-        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
-
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
         if (transform.position == targetWaypoint.position)
         {
             waypointIndex++;
+        }
+        // If the player has reached the end of the waypoints, allow them to move freely
+        if (waypointIndex >= waypoints.Length)
+        {
+            followingWaypoints = false;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<PlayerMovement>().enabled = true;
+            waypointIndex = 0;
+
         }
     }
 }
