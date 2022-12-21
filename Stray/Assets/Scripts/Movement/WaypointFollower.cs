@@ -5,7 +5,10 @@ using UnityEngine;
 public class WaypointFollower : MonoBehaviour
 {
     // Array of waypoints to follow
-    public Transform[] waypoints;
+    public Transform[] waypoints1;
+    public Transform[] waypoints2;
+    public Transform[] waypoints3;
+    public Transform[] waypoints4;
     public GameObject Cat;
     // Speed at which to move
     public float speed = 2.0f;
@@ -16,14 +19,32 @@ public class WaypointFollower : MonoBehaviour
     // Flag to track whether the player is following waypoints or not
     public bool followingWaypoints = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         // If the player enters the collider, start following the waypoints
-        if (other.gameObject.tag == "Jump1") 
+        if (other.gameObject.tag == "Jump1" && Input.GetKeyDown(KeyCode.Space)) 
         {
-            //Debug.Log("Test");
+            Debug.Log("Test");
             followingWaypoints = true;
             
+        }
+        if (other.gameObject.tag == "Jump2" && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Test");
+            followingWaypoints = true;
+
+        }
+        if (other.gameObject.tag == "Jump3" && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Test");
+            followingWaypoints = true;
+
+        }
+        if (other.gameObject.tag == "Jump4" && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Test");
+            followingWaypoints = true;
+
         }
     }
 
@@ -41,7 +62,7 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoint()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints[waypointIndex];
+        Transform targetWaypoint = waypoints1[waypointIndex];
         // Move towards the waypoint
         Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
@@ -50,7 +71,7 @@ public class WaypointFollower : MonoBehaviour
             waypointIndex++;
         }
         // If the player has reached the end of the waypoints, allow them to move freely
-        if (waypointIndex >= waypoints.Length)
+        if (waypointIndex >= waypoints1.Length)
         {
             followingWaypoints = false;
             GetComponent<Rigidbody>().useGravity = true;
