@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Balk border
   - Jump1
+  - jump2
+  - Jump3
+  - Jump4
+  - Jump2
   layers:
   - Default
   - TransparentFX
