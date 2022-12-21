@@ -60,19 +60,19 @@ public class WaypointFollower : MonoBehaviour
             GetComponent<PlayerMovement>().enabled = false;
             checkWaypoints1();
         }
-        if (followingWaypoints1 == true)
+        if (followingWaypoints2 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<PlayerMovement>().enabled = false;
             checkWaypoints2();
         }
-        if (followingWaypoints1 == true)
+        if (followingWaypoints3 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<PlayerMovement>().enabled = false;
             checkWaypoints3();
         }
-        if (followingWaypoints1 == true)
+        if (followingWaypoints4 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<PlayerMovement>().enabled = false;
