@@ -1,19 +1,7 @@
-<img src="https://visitor-badge.glitch.me/badge?page_id=Nikkivw.VerticalSlice" alt="visitor badge">
+Vertical slice Stray
 
-# VerticalSlice
+This was a school project where our goal was to remake a particular scene in Stray in about 8 weeks, It is all made in Unity with C# with 3 developers and 3 artists.
 
-![Javascript Badge](https://img.shields.io/badge/-csharp-b4326b?style=for-the-badge&labelColor=141321&logo=csharp&logoColor=95ddd4)
-![Javascript Badge](https://img.shields.io/badge/-unity-b4326b?style=for-the-badge&labelColor=141321&logo=unity&logoColor=95ddd4)
+The part that we needed to recreate: https://youtu.be/ylFntQ4-vr8?t=139
 
-## Devs
-![Spooky's GitHub stats](https://github-readme-stats.vercel.app/api?username=Nikkivw&show_icons=true&theme=radical)
-![Spooky's GitHub stats](https://github-readme-stats.vercel.app/api?username=spookyboy2000&show_icons=true&theme=radical)
-![Spooky's GitHub stats](https://github-readme-stats.vercel.app/api?username=BrendanOssebaar&show_icons=true&theme=radical)
-
-## Artists
-![Spooky's GitHub stats](https://github-readme-stats.vercel.app/api?username=FrostFlashy&show_icons=true&theme=radical)
-![Spooky's GitHub stats](https://github-readme-stats.vercel.app/api?username=DuifjevP&show_icons=true&theme=radical)
-![Spooky's GitHub stats](https://github-readme-stats.vercel.app/api?username=JustCAG&show_icons=true&theme=radical)
-
-
-
+our trello: https://trello.com/b/eGgQkMVA/vertical-slice
