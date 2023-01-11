@@ -68,6 +68,18 @@ public class ThirdPersonController : MonoBehaviour
             this.rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
         else
             rb.angularVelocity = Vector3.zero;
+
+        //Vector3 direction = rb.velocity.normalized;
+        //direction.y = 0f;
+
+        //if (move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f)
+        //{
+        //    transform.rotation = Quaternion.LookRotation(transform.position - direction, Vector3.up);
+        //    Vector3 dir = Vector3.RotateTowards(transform.forward, transform.position - direction, 1000, 0.0f);
+        //    transform.rotation = Quaternion.LookRotation(dir);
+        //}
+        //else
+        //    rb.angularVelocity = Vector3.zero;
     }
 
     private Vector3 GetCameraForward(Camera playerCamera)
