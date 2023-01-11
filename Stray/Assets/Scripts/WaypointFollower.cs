@@ -9,6 +9,8 @@ public class WaypointFollower : MonoBehaviour
     public Transform[] waypoints2;
     public Transform[] waypoints3;
     public Transform[] waypoints4;
+    public Transform[] waypoints5;  
+
     public GameObject Cat;
     // Speed at which to move
     public float speed = 2.0f;
@@ -21,6 +23,7 @@ public class WaypointFollower : MonoBehaviour
     public bool followingWaypoints2 = false;
     public bool followingWaypoints3 = false;
     public bool followingWaypoints4 = false;
+    public bool followingWaypoints5 = false;
 
     private void OnTriggerStay(Collider other)
     {
@@ -47,6 +50,12 @@ public class WaypointFollower : MonoBehaviour
         {
             Debug.Log("Test");
             followingWaypoints4 = true;
+
+        }
+        if (other.gameObject.tag == "Jump4" && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Test");
+            followingWaypoints5 = true;
 
         }
     }
@@ -77,6 +86,12 @@ public class WaypointFollower : MonoBehaviour
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<PlayerMovement>().enabled = false;
             checkWaypoints4();
+        }
+        if (followingWaypoints5 == true)
+        {
+            GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<PlayerMovement>().enabled = false;
+            checkWaypoints5();
         }
     }
     void checkWaypoints1()
@@ -154,6 +169,26 @@ public class WaypointFollower : MonoBehaviour
         if (waypointIndex >= waypoints4.Length)
         {
             followingWaypoints4 = false;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<PlayerMovement>().enabled = true;
+            waypointIndex = 0;
+        }
+    }
+    void checkWaypoints5()
+    {
+        // Get the current waypoint
+        Transform targetWaypoint = waypoints4[waypointIndex];
+        // Move towards the waypoint
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+        // If the player has reached the waypoint, move to the next one
+        if (transform.position == targetWaypoint.position)
+        {
+            waypointIndex++;
+        }
+        // If the player has reached the end of the waypoints, allow them to move freely
+        if (waypointIndex >= waypoints4.Length)
+        {
+            followingWaypoints5 = false;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<PlayerMovement>().enabled = true;
             waypointIndex = 0;
