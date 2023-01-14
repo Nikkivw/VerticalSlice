@@ -10,6 +10,8 @@ public class ThirdPersonController : MonoBehaviour
     private ThirdPersonMovement playerActionsAsset;
     private InputAction move;
 
+    public float lerpspeed = 1f;
+
     //movement fields
     private Rigidbody rb;
     [SerializeField]
@@ -59,15 +61,33 @@ public class ThirdPersonController : MonoBehaviour
         LookAt();
     }
 
+    float step = 0.1f;
     private void LookAt()
     {
         Vector3 direction = rb.velocity;
-        direction.y = 0f;
+        //direction.y = 0f;
+        //direction.z = 90f;
+
+        Quaternion startRotation = rb.rotation;
+        Quaternion endRotation = Quaternion.LookRotation(direction);
 
         if (move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f)
-            this.rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        {
+            //var naam = new Vector3(0, 0, 0);
+            //transform.rotation = Quaternion.LookRotation(direction);
+            
+
+            rb.rotation = Quaternion.Slerp(startRotation, endRotation, step);
+            step += 0.1f * lerpspeed * Time.deltaTime;
+        }
+        if (move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude < 0.1f)
+        {
+            step = 0.0f;
+        }
         else
             rb.angularVelocity = Vector3.zero;
+
+        
 
         //Vector3 direction = rb.velocity.normalized;
         //direction.y = 0f;
