@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 128684235}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,7 +402,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269027792}
-  m_LocalRotation: {x: -0.03632492, y: 0.00000011920929, z: -0.00000011920929, w: 0.99934006}
+  m_LocalRotation: {x: -0.034086917, y: 0.00000008940696, z: -0.0000000372529, w: 0.99941885}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 6.52, z: -7.36}
+  m_FollowOffset: {x: 0, y: 2.12, z: -5.46}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 6.52, z: -7.36}
+  m_FollowOffset: {x: 0, y: 2.12, z: -5.46}
   m_XDamping: 1
   m_YDamping: 0
   m_ZDamping: 1
@@ -719,6 +719,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &441068473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7441570936448211509, guid: 5279b4e45aae1874dbe6a7397fc81fcc, type: 3}
+  m_PrefabInstance: {fileID: 536974563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &441068477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441068473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 46.872734, y: 5.691147, z: 1.5121708}
+  m_Center: {x: 2.2758455, y: 2.0403056, z: 26.231224}
 --- !u!1 &486115584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,6 +1443,8 @@ GameObject:
   - component: {fileID: 884750680}
   - component: {fileID: 884750681}
   - component: {fileID: 884750682}
+  - component: {fileID: 884750684}
+  - component: {fileID: 884750683}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1465,7 +1485,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 37.706387
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -1490,8 +1510,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884750676}
-  m_LocalRotation: {x: 0.25073364, y: -0.6611602, z: 0.2507337, w: 0.66116}
-  m_LocalPosition: {x: 23.577866, y: 41.572002, z: -36.888756}
+  m_LocalRotation: {x: 0.13019525, y: -0.69501746, z: 0.13019525, w: 0.69501746}
+  m_LocalPosition: {x: 21.677864, y: 37.172, z: -36.888756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1581,7 +1601,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
-    m_InvertInput: 0
+    m_InvertInput: 1
     m_MinValue: 0
     m_MaxValue: 1
     m_Wrap: 0
@@ -1605,7 +1625,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -1630,8 +1650,8 @@ MonoBehaviour:
   m_Orbits:
   - m_Height: 5.22
     m_Radius: 7.91
-  - m_Height: 6.52
-    m_Radius: 7.36
+  - m_Height: 2.12
+    m_Radius: 5.46
   - m_Height: 0.4
     m_Radius: 1.3
   m_LegacyHeadingBias: 3.4028235e+38
@@ -1655,6 +1675,52 @@ MonoBehaviour:
   AutoEnableInputs: 1
   XYAxis: {fileID: -5630151704836100654, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   ZAxis: {fileID: 0}
+--- !u!114 &884750683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884750676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Width: 4
+  m_Damping: 6
+  m_MinFOV: 30
+  m_MaxFOV: 60
+--- !u!114 &884750684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884750676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  m_IgnoreTag: Player
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.01
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0
+  m_Strategy: 1
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 0
+  m_DampingWhenOccluded: 0
+  m_OptimalTargetDistance: 0
 --- !u!1 &914036069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,7 +2197,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288148229}
-  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0.000000059604638, w: 1}
+  m_LocalRotation: {x: -0.000000014901161, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2525,7 +2591,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547868850}
-  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0.000000059604638, w: 1}
+  m_LocalRotation: {x: -0.000000014901161, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2695,7 +2761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 6.52, z: -7.36}
+  m_FollowOffset: {x: 0, y: 2.12, z: -5.46}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -2953,7 +3019,7 @@ GameObject:
   - component: {fileID: 1872114234}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3165,7 +3231,7 @@ GameObject:
   - component: {fileID: 919132148975001548}
   m_Layer: 0
   m_Name: stray cat complete (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3283,7 +3349,7 @@ GameObject:
   - component: {fileID: 8164078558279935781}
   m_Layer: 0
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
