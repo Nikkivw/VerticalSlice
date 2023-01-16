@@ -50,8 +50,8 @@ public class ThirdPersonController : MonoBehaviour
         rb.AddForce(forceDirection, ForceMode.Impulse);
         forceDirection = Vector3.zero;
 
-        if (rb.velocity.y < 0f)
-            rb.velocity -= Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
+        //if (rb.velocity.y < 0f)
+        //    rb.velocity -= Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
 
         Vector3 horizontalVelocity = rb.velocity;
         horizontalVelocity.y = 0;
