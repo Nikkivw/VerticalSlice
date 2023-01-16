@@ -284,7 +284,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &32892142
 Transform:
@@ -547,8 +547,8 @@ GameObject:
   m_Name: Walkable_Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &87501482
 Transform:
@@ -760,8 +760,8 @@ GameObject:
   m_Name: Railing_Rail_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &118771334
 Transform:
@@ -1024,6 +1024,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ladder_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2947814671650878323, guid: f6bd5d83fd10fe34288beae186919a1c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2947814671650878323, guid: f6bd5d83fd10fe34288beae186919a1c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bd5d83fd10fe34288beae186919a1c, type: 3}
 --- !u!4 &121821586 stripped
@@ -1212,7 +1220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -1316,7 +1324,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &171290793
 Transform:
@@ -1503,8 +1511,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205571756}
-  m_LocalRotation: {x: -0, y: -0.16535756, z: -0, w: 0.9862338}
-  m_LocalPosition: {x: 4.16, y: 3.16, z: 7.98}
+  m_LocalRotation: {x: 0, y: -0.16535747, z: 0, w: 0.9862338}
+  m_LocalPosition: {x: 4.05, y: 2.71, z: 7.94}
   m_LocalScale: {x: 1.0198611, y: 1.6757534, z: 17.11111}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1561,6 +1569,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2aba7852ab46afa429f7d8f51cd0f6c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: 2aba7852ab46afa429f7d8f51cd0f6c1, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: 2aba7852ab46afa429f7d8f51cd0f6c1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2aba7852ab46afa429f7d8f51cd0f6c1, type: 3}
       propertyPath: m_Name
@@ -1676,6 +1692,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vuilniszak_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5112731102878130267, guid: 63594f11721b3ec45bd3af7759d55fdb, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112731102878130267, guid: 63594f11721b3ec45bd3af7759d55fdb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63594f11721b3ec45bd3af7759d55fdb, type: 3}
 --- !u!1 &227240212 stripped
@@ -1749,8 +1773,8 @@ GameObject:
   m_Name: Walls_coll_pCube13 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &262263910
 Transform:
@@ -1972,8 +1996,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362417370}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -19.05, z: 0}
-  m_LocalScale: {x: 1, y: 2.2685, z: 1}
+  m_LocalPosition: {x: 0, y: -19.05, z: 2.04}
+  m_LocalScale: {x: 1, y: 2.2685, z: 1.1777}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 900886439}
@@ -2190,8 +2214,8 @@ GameObject:
   m_Name: Railing_Rail_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &381756984
 Transform:
@@ -2375,6 +2399,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vuilniszak_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5112731102878130267, guid: 63594f11721b3ec45bd3af7759d55fdb, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112731102878130267, guid: 63594f11721b3ec45bd3af7759d55fdb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63594f11721b3ec45bd3af7759d55fdb, type: 3}
 --- !u!1 &393981676 stripped
@@ -2531,8 +2563,8 @@ GameObject:
   m_Name: pCube58_Railing_Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &482266329
 Transform:
@@ -2806,8 +2838,8 @@ GameObject:
   m_Name: Railing_Rail_26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &564254890
 Transform:
@@ -3279,7 +3311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -3301,8 +3333,8 @@ GameObject:
   m_Name: Railing_Rail_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &645013291
 Transform:
@@ -4030,8 +4062,8 @@ GameObject:
   m_Name: Railing_Rail_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &743429653
 Transform:
@@ -4403,7 +4435,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &775208933
 Transform:
@@ -4780,8 +4812,8 @@ GameObject:
   m_Name: Walls_coll_pCube26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &800584374
 Transform:
@@ -5033,7 +5065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -5222,8 +5254,8 @@ GameObject:
   m_Name: Walls_coll_pCube40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &931445830
 Transform:
@@ -5324,19 +5356,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &968444840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149048964814}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.72, y: 0.33, z: 0.19}
-  m_Center: {x: 0.06, y: 0.17, z: 0}
 --- !u!1 &968832728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5386,8 +5405,8 @@ GameObject:
   m_Name: Railing_Rail_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &987789083
 Transform:
@@ -5524,7 +5543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999255644}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 6.858, y: 0.208, z: 7.917}
+  m_LocalPosition: {x: 0.787, y: 0.208, z: 7.917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5544,8 +5563,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.72, y: 0.33, z: 0.19}
-  m_Center: {x: 0.06, y: 0.17, z: 0}
+  m_Size: {x: 0.4487875, y: 0.33, z: 0.1547932}
+  m_Center: {x: -0.008487791, y: 0.17, z: -0.006327171}
 --- !u!114 &999255648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5625,7 +5644,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &1010888397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5766,7 +5785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -5969,8 +5988,8 @@ GameObject:
   m_Name: Railing_Rail_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1058887694
 Transform:
@@ -6252,7 +6271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069224277}
   m_LocalRotation: {x: -0, y: -0.17417786, z: -0, w: 0.9847142}
-  m_LocalPosition: {x: 2.55, y: 2.204, z: 16.002}
+  m_LocalPosition: {x: 2.55, y: 2.17, z: 16.002}
   m_LocalScale: {x: 1.2740103, y: 1.5768764, z: 0.39830032}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6395,7 +6414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -6777,8 +6796,8 @@ GameObject:
   m_Name: Walls_coll_pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1150710631
 Transform:
@@ -7419,7 +7438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -7472,8 +7491,8 @@ GameObject:
   m_Name: Railing_Rail_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1226113576
 Transform:
@@ -7714,8 +7733,8 @@ GameObject:
   m_Name: Railing_Rail_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1247563388
 Transform:
@@ -8008,8 +8027,8 @@ GameObject:
   m_Name: Railing_Rail_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1314325798
 Transform:
@@ -8136,8 +8155,8 @@ GameObject:
   m_Name: Railing_Rail_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1323292834
 Transform:
@@ -8345,8 +8364,8 @@ GameObject:
   m_Name: Railing_Fence_pCube59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1335022346
 Transform:
@@ -8559,8 +8578,8 @@ GameObject:
   m_Name: Railing_Rail_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1351686901
 Transform:
@@ -8687,8 +8706,8 @@ GameObject:
   m_Name: Railing_Rail_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1365246211
 Transform:
@@ -8821,7 +8840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388594587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.88, y: 2.9, z: -5.25}
+  m_LocalPosition: {x: 1.88, y: 3.092, z: -5.439}
   m_LocalScale: {x: 1.9002012, y: 1.9002012, z: 1.9002012}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8845,8 +8864,8 @@ GameObject:
   m_Name: Walls_coll_pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1411645710
 Transform:
@@ -8990,8 +9009,8 @@ GameObject:
   m_Name: Railing_Rail_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1476429880
 Transform:
@@ -9298,8 +9317,8 @@ GameObject:
   m_Name: Railing_Rail_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1527071336
 Transform:
@@ -9425,7 +9444,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1533477375
 Transform:
@@ -9607,8 +9626,8 @@ GameObject:
   m_Name: Railing_Rail_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1543934554
 Transform:
@@ -9857,7 +9876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -10338,7 +10357,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1679319338
 Transform:
@@ -10434,8 +10453,8 @@ GameObject:
   m_Name: Rail_01_Railing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1681530070
 Transform:
@@ -10472,7 +10491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5881968415037523714, guid: 5279b4e45aae1874dbe6a7397fc81fcc, type: 3}
+  - {fileID: 2100000, guid: ba8164c40606f8e4cb8f86c17783c0bb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10603,8 +10622,8 @@ GameObject:
   m_Name: Railing_Rail_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1714209924
 Transform:
@@ -10731,8 +10750,8 @@ GameObject:
   m_Name: Railing_Rail_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1716561155
 Transform:
@@ -15719,7 +15738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064948735284591528, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
@@ -16268,8 +16287,8 @@ GameObject:
   m_Name: Railing_Rail_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1877511548
 Transform:
@@ -16592,7 +16611,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1917674539
 Transform:
@@ -16959,8 +16978,8 @@ GameObject:
   m_Name: Railing_Rail_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1960806612
 Transform:
@@ -17087,8 +17106,8 @@ GameObject:
   m_Name: Railing_Rail_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1987256955
 Transform:
@@ -17456,8 +17475,8 @@ GameObject:
   m_Name: Railing_Rail_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2009821944
 Transform:
@@ -17672,9 +17691,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010304153}
-  m_LocalRotation: {x: -0, y: -0.17417786, z: -0, w: 0.9847142}
-  m_LocalPosition: {x: 6.19, y: 3.08, z: 9.25}
-  m_LocalScale: {x: 1.019861, y: 1.5768764, z: 17.11111}
+  m_LocalRotation: {x: 0, y: -0.17418098, z: 0, w: 0.98471373}
+  m_LocalPosition: {x: 6.1500006, y: 2.79, z: 9.24}
+  m_LocalScale: {x: 1.019861, y: 1.0299468, z: 17.11111}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 900886439}
@@ -17782,8 +17801,8 @@ GameObject:
   m_Name: Railing_Rail_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2042615650
 Transform:
@@ -18021,8 +18040,8 @@ GameObject:
   m_Name: Unwalkable_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2126271445
 Transform:
@@ -18114,7 +18133,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652765072500}
-  - component: {fileID: 968444840}
   - component: {fileID: 968444836}
   m_Layer: 0
   m_Name: cat
