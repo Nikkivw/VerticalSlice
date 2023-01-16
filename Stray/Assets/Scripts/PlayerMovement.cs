@@ -19,25 +19,25 @@ public class PlayerMovement : MonoBehaviour
         velocity.x = 0;
         velocity.z = 0;
         velocity.y = 0;
-        if (Input.GetKey(KeyCode.A))
-        {
-            velocity.x = speed;
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    velocity.x = speed;
             
-        }
+        //}
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            velocity.x = -speed;
+        //if (Input.GetKey(KeyCode.D))
+        //{
+        //    velocity.x = -speed;
             
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            velocity.z = -speed;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            velocity.z = speed;
-        }
+        //}
+        //if (Input.GetKey(KeyCode.W))
+        //{
+        //    velocity.z = -speed;
+        //}
+        //if (Input.GetKey(KeyCode.S))
+        //{
+        //    velocity.z = speed;
+        //}
         if (Input.GetKey(KeyCode.Space))
         {
             velocity.y = speed;
