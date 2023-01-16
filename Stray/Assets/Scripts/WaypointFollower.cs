@@ -52,7 +52,7 @@ public class WaypointFollower : MonoBehaviour
             followingWaypoints4 = true;
 
         }
-        if (other.gameObject.tag == "Jump4" && Input.GetKeyDown(KeyCode.Space))
+        if (other.gameObject.tag == "Jump5" && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Test");
             followingWaypoints5 = true;
@@ -177,7 +177,7 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoints5()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints4[waypointIndex];
+        Transform targetWaypoint = waypoints5[waypointIndex];
         // Move towards the waypoint
         Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
@@ -186,7 +186,7 @@ public class WaypointFollower : MonoBehaviour
             waypointIndex++;
         }
         // If the player has reached the end of the waypoints, allow them to move freely
-        if (waypointIndex >= waypoints4.Length)
+        if (waypointIndex >= waypoints5.Length)
         {
             followingWaypoints5 = false;
             GetComponent<Rigidbody>().useGravity = true;
