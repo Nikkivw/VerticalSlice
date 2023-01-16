@@ -3800,7 +3800,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664806267}
-  m_LocalRotation: {x: -0.000000029802322, y: 0.000000029571378, z: -0.000000015354374, w: 1}
+  m_LocalRotation: {x: -0.000000029802322, y: -0.000000018626451, z: 0.000000024214387, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4650,7 +4650,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761820357}
-  m_LocalRotation: {x: -0.036324978, y: 0.000000022335335, z: -0.000000010585544, w: 0.99934006}
+  m_LocalRotation: {x: -0.057448898, y: -0.00000003073365, z: 0.000000035855923, w: 0.9983485}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6106,6 +6106,7 @@ GameObject:
   - component: {fileID: 1010888398}
   - component: {fileID: 1010888400}
   - component: {fileID: 1010888399}
+  - component: {fileID: 1010888401}
   m_Layer: 0
   m_Name: Walls_coll_pCube13
   m_TagString: Untagged
@@ -6178,6 +6179,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010888397}
   m_Mesh: {fileID: 5176757137269651992, guid: 5279b4e45aae1874dbe6a7397fc81fcc, type: 3}
+--- !u!65 &1010888401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010888397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.50626, y: 24.167713, z: 25.176445}
+  m_Center: {x: 30.051664, y: 5.973964, z: 18.30197}
 --- !u!1001 &1024513601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8545,7 +8559,7 @@ GameObject:
   - component: {fileID: 1266248384}
   m_Layer: 0
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9546,7 +9560,6 @@ GameObject:
   - component: {fileID: 1411645712}
   - component: {fileID: 1411645711}
   - component: {fileID: 1411645714}
-  - component: {fileID: 1411645713}
   m_Layer: 0
   m_Name: Walls_coll_pCube11
   m_TagString: Untagged
@@ -9618,20 +9631,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411645709}
-  m_Mesh: {fileID: -3606082100432515136, guid: 5279b4e45aae1874dbe6a7397fc81fcc, type: 3}
---- !u!64 &1411645713
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411645709}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: -3606082100432515136, guid: 5279b4e45aae1874dbe6a7397fc81fcc, type: 3}
 --- !u!64 &1411645714
 MeshCollider:
@@ -10587,6 +10586,8 @@ GameObject:
   - component: {fileID: 1562378747}
   - component: {fileID: 1562378746}
   - component: {fileID: 1562378745}
+  - component: {fileID: 1562378752}
+  - component: {fileID: 1562378751}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -10781,7 +10782,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: 0
@@ -10806,8 +10807,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562378744}
-  m_LocalRotation: {x: 0.23717502, y: -0.00000003236929, z: 0.000000007902674, w: 0.97146696}
-  m_LocalPosition: {x: 0, y: 1.08, z: 5.067}
+  m_LocalRotation: {x: 0.4438198, y: 0.013077988, z: -0.006477999, w: 0.8959972}
+  m_LocalPosition: {x: -0.024010751, y: 1.08, z: 6.3246627}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10817,6 +10818,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 51.02, y: 0, z: 0}
+--- !u!114 &1562378751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562378744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Width: 2
+  m_Damping: 1
+  m_MinFOV: 3
+  m_MaxFOV: 60
+--- !u!114 &1562378752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562378744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  m_IgnoreTag: Player
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.01
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0.1
+  m_Strategy: 1
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 0
+  m_DampingWhenOccluded: 0
+  m_OptimalTargetDistance: 0
 --- !u!1 &1590660977
 GameObject:
   m_ObjectHideFlags: 0
@@ -11813,8 +11860,8 @@ GameObject:
   - component: {fileID: 1720872088}
   - component: {fileID: 1720872093}
   m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17470,8 +17517,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862943708}
-  m_LocalRotation: {x: -0.000000029802322, y: 0.000000029571378, z: -0.000000015354374, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.000000029802322, y: -0.000000018626451, z: 0.000000024214387, w: 1}
+  m_LocalPosition: {x: 2.2195005e-16, y: 0.000000072236546, z: -0.00000009483004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18476,7 +18523,7 @@ GameObject:
   - component: {fileID: 1994405509}
   m_Layer: 0
   m_Name: stray cat complete (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
