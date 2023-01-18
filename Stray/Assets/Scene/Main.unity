@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 32892144}
   - component: {fileID: 32892143}
   - component: {fileID: 32892145}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 87501484}
   - component: {fileID: 87501483}
   - component: {fileID: 87501485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 171290795}
   - component: {fileID: 171290794}
   - component: {fileID: 171290796}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1835,14 +1835,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205571756}
-  m_LocalRotation: {x: -0, y: -0.17024367, z: -0, w: 0.98540205}
-  m_LocalPosition: {x: 4.05, y: 2.71, z: 7.94}
+  m_LocalRotation: {x: -0, y: -0.167336, z: -0, w: 0.9859}
+  m_LocalPosition: {x: 4.336, y: 3.491, z: 8.042}
   m_LocalScale: {x: 1.0198611, y: 1.6757534, z: 17.11111}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 900886439}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -19.604, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -19.266, z: 0}
 --- !u!1001 &222644752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1986,8 +1986,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224734526}
-  m_LocalRotation: {x: 0.028831514, y: 0.000000025145711, z: -0.00000003073365, w: 0.9995843}
-  m_LocalPosition: {x: 0.0000000018619728, y: 3.7206703e-11, z: 3.3465883e-11}
+  m_LocalRotation: {x: 0.028831514, y: -0.000000034566117, z: 0.000000012489184, w: 0.9995843}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.08, z: -2.08}
+  m_FollowOffset: {x: 0, y: 1.1, z: -2.79}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -2576,6 +2576,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  turnspeed: 0.1
   Cat: {fileID: 662471787}
   speed: 2
   followingWaypoints1: 0
@@ -2884,7 +2885,7 @@ GameObject:
   - component: {fileID: 373833247}
   - component: {fileID: 373833246}
   - component: {fileID: 373833248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Unwalkable_pCube28 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3542,7 +3543,7 @@ GameObject:
   - component: {fileID: 482266331}
   - component: {fileID: 482266330}
   - component: {fileID: 482266332}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube58_Railing_Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4120,7 +4121,7 @@ GameObject:
   - component: {fileID: 610184102}
   - component: {fileID: 610184101}
   - component: {fileID: 610184103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4738,6 +4739,7 @@ MonoBehaviour:
   - {fileID: 1828823294}
   - {fileID: 92629775}
   - {fileID: 913849980}
+  turnspeed: 500
   Cat: {fileID: 662471787}
   speed: 2
   followingWaypoints1: 0
@@ -4768,8 +4770,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662471787}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.04, z: 7.147}
+  m_LocalRotation: {x: -0, y: 0.66410536, z: -0, w: 0.747639}
+  m_LocalPosition: {x: 0.059658974, y: 0.03999999, z: 7.0662117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4777,7 +4779,7 @@ Transform:
   - {fileID: 51079123}
   m_Father: {fileID: 0}
   m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 83.227, z: 0}
 --- !u!95 &662471795
 Animator:
   serializedVersion: 4
@@ -4798,8 +4800,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &662471796
-CapsuleCollider:
+--- !u!65 &662471796
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4808,10 +4810,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.19677144
-  m_Height: 0.71
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.20354173, y: 0.33292687, z: 0.45248365}
+  m_Center: {x: -0.01564549, y: 0.34960145, z: 0.030714273}
 --- !u!1 &685210377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,7 +4939,7 @@ GameObject:
   - component: {fileID: 689804488}
   - component: {fileID: 689804487}
   - component: {fileID: 689804489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls_coll_pCube10 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5694,7 +5695,7 @@ GameObject:
   - component: {fileID: 775208935}
   - component: {fileID: 775208934}
   - component: {fileID: 775208936}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6072,7 +6073,7 @@ GameObject:
   - component: {fileID: 800584376}
   - component: {fileID: 800584375}
   - component: {fileID: 800584377}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls_coll_pCube26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6438,7 +6439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.08, z: -2.08}
+  m_FollowOffset: {x: 0, y: 1.1, z: -2.79}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -6703,7 +6704,7 @@ GameObject:
   - component: {fileID: 931445832}
   - component: {fileID: 931445831}
   - component: {fileID: 931445833}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls_coll_pCube40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7181,6 +7182,7 @@ MonoBehaviour:
   - {fileID: 1828823294}
   - {fileID: 92629775}
   - {fileID: 913849980}
+  turnspeed: 0.1
   Cat: {fileID: 999255644}
   speed: 2
   followingWaypoints1: 0
@@ -7244,7 +7246,7 @@ GameObject:
   - component: {fileID: 1010888400}
   - component: {fileID: 1010888399}
   - component: {fileID: 1010888401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls_coll_pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8106,7 +8108,7 @@ GameObject:
   - component: {fileID: 1087948185}
   - component: {fileID: 1087948187}
   - component: {fileID: 1087948186}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Unwalkable_pCube28 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8500,7 +8502,7 @@ GameObject:
   - component: {fileID: 1150710633}
   - component: {fileID: 1150710632}
   - component: {fileID: 1150710634}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls_coll_pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8954,7 +8956,7 @@ GameObject:
   - component: {fileID: 1181145846}
   - component: {fileID: 1181145848}
   - component: {fileID: 1181145847}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Unwalkable_pCube23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9793,7 +9795,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263469119}
-  m_LocalRotation: {x: -0.000000029802322, y: 0.00000003259629, z: -0.000000037718564, w: 1}
+  m_LocalRotation: {x: -0, y: -0.00000004969255, z: 0.00000001635085, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10883,7 +10885,7 @@ GameObject:
   - component: {fileID: 1411645712}
   - component: {fileID: 1411645711}
   - component: {fileID: 1411645714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls_coll_pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11043,7 +11045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 1.08, z: -2.08}
+  m_FollowOffset: {x: 0, y: 1.1, z: -2.79}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -11596,7 +11598,7 @@ GameObject:
   - component: {fileID: 1533477377}
   - component: {fileID: 1533477376}
   - component: {fileID: 1533477378}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11693,7 +11695,7 @@ GameObject:
   - component: {fileID: 1539073073}
   - component: {fileID: 1539073075}
   - component: {fileID: 1539073074}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Unwalkable_pCube28 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12171,8 +12173,8 @@ MonoBehaviour:
   m_Orbits:
   - m_Height: 5.22
     m_Radius: 7.91
-  - m_Height: 1.08
-    m_Radius: 2.08
+  - m_Height: 1.1
+    m_Radius: 2.79
   - m_Height: 0.4
     m_Radius: 1.3
   m_LegacyHeadingBias: 3.4028235e+38
@@ -12272,8 +12274,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562378744}
-  m_LocalRotation: {x: 0.40693855, y: 0.012271692, z: -0.0054675504, w: 0.9133567}
-  m_LocalPosition: {x: -0.023217784, y: 1.12, z: 6.283128}
+  m_LocalRotation: {x: 0.15827256, y: -0.000000036310745, z: 0.0000000058203575, w: 0.98739547}
+  m_LocalPosition: {x: 0.059658974, y: 1.14, z: 4.2762117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12313,7 +12315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 8
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
@@ -12801,7 +12803,7 @@ GameObject:
   - component: {fileID: 1679319340}
   - component: {fileID: 1679319339}
   - component: {fileID: 1679319341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1_Walkable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18738,7 +18740,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839088824}
-  m_LocalRotation: {x: -0.028641101, y: 0.00000002235174, z: -0.000000024680045, w: 0.99958974}
+  m_LocalRotation: {x: -0.028641045, y: -0.000000007678333, z: 0.0000000022849327, w: 0.9995898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18842,7 +18844,7 @@ GameObject:
   - component: {fileID: 1858734092}
   - component: {fileID: 1858734091}
   - component: {fileID: 1858734093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube16 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19176,7 +19178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886260461}
   m_LocalRotation: {x: -0, y: -0.17417786, z: -0, w: 0.9847142}
-  m_LocalPosition: {x: 7.535, y: 2.353, z: 1.699}
+  m_LocalPosition: {x: 7.535, y: 2.455, z: 1.699}
   m_LocalScale: {x: 1.2740103, y: 1.5768764, z: 0.39830032}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19357,7 +19359,7 @@ GameObject:
   - component: {fileID: 1917674541}
   - component: {fileID: 1917674540}
   - component: {fileID: 1917674542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walkable_pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19571,7 +19573,7 @@ GameObject:
   - component: {fileID: 1942691660}
   - component: {fileID: 1942691662}
   - component: {fileID: 1942691661}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Unwalkable_pCube28 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20604,8 +20606,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010304153}
   m_LocalRotation: {x: -0, y: -0.16503222, z: -0, w: 0.9862882}
-  m_LocalPosition: {x: 6.1500006, y: 2.79, z: 9.24}
-  m_LocalScale: {x: 1.019861, y: 1.0299468, z: 17.11111}
+  m_LocalPosition: {x: 5.97, y: 3.79, z: 9.18}
+  m_LocalScale: {x: 1.019861, y: 1.0299468, z: 14.259544}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 900886439}
