@@ -9,8 +9,8 @@ public class WaypointFollower : MonoBehaviour
     public Transform[] waypoints2;
     public Transform[] waypoints3;
     public Transform[] waypoints4;
-    public Transform[] waypoints5;  
-
+    public Transform[] waypoints5;
+    public float turnspeed = 0.1f;
     public GameObject Cat;
     // Speed at which to move
     public float speed = 2.0f;
@@ -25,6 +25,7 @@ public class WaypointFollower : MonoBehaviour
     public bool followingWaypoints4 = false;
     public bool followingWaypoints5 = false;
 
+    
     private void OnTriggerStay(Collider other)
     {
         // If the player enters the collider, start following the waypoints
@@ -66,31 +67,31 @@ public class WaypointFollower : MonoBehaviour
         if(followingWaypoints1 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<ThirdPersonController>().enabled = false;            
             checkWaypoints1();
         }
         if (followingWaypoints2 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<ThirdPersonController>().enabled = false;
             checkWaypoints2();
         }
         if (followingWaypoints3 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<ThirdPersonController>().enabled = false;
             checkWaypoints3();
         }
         if (followingWaypoints4 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<ThirdPersonController>().enabled = false;
             checkWaypoints4();
         }
         if (followingWaypoints5 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<ThirdPersonController>().enabled = false;
             checkWaypoints5();
         }
     }
@@ -98,19 +99,21 @@ public class WaypointFollower : MonoBehaviour
     {
         // Get the current waypoint
         Transform targetWaypoint = waypoints1[waypointIndex];
+        
         // Move towards the waypoint
         Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
         if (transform.position == targetWaypoint.position)
-        {
+        {    
+            Cat.transform.rotation = Quaternion.Euler(0, 160, 0);
             waypointIndex++;
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints1.Length)
-        {
+        {            
             followingWaypoints1 = false;
             GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<ThirdPersonController>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -124,13 +127,14 @@ public class WaypointFollower : MonoBehaviour
         if (transform.position == targetWaypoint.position)
         {
             waypointIndex++;
+            transform.LookAt(targetWaypoint);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints2.Length)
         {
             followingWaypoints2 = false;
             GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<ThirdPersonController>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -144,13 +148,15 @@ public class WaypointFollower : MonoBehaviour
         if (transform.position == targetWaypoint.position)
         {
             waypointIndex++;
+            transform.LookAt(targetWaypoint);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints3.Length)
         {
+            Cat.transform.rotation = Quaternion.Euler(0, 270, 0);
             followingWaypoints3 = false;
             GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<ThirdPersonController>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -164,13 +170,14 @@ public class WaypointFollower : MonoBehaviour
         if (transform.position == targetWaypoint.position)
         {
             waypointIndex++;
+            transform.LookAt(targetWaypoint);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints4.Length)
         {
             followingWaypoints4 = false;
             GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<ThirdPersonController>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -184,13 +191,14 @@ public class WaypointFollower : MonoBehaviour
         if (transform.position == targetWaypoint.position)
         {
             waypointIndex++;
+            transform.LookAt(targetWaypoint);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints5.Length)
         {
             followingWaypoints5 = false;
             GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<ThirdPersonController>().enabled = true;
             waypointIndex = 0;
         }
     }
