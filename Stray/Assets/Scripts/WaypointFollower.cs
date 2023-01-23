@@ -14,7 +14,7 @@ public class WaypointFollower : MonoBehaviour
     public GameObject Cat;
     // Speed at which to move
     public float speed = 2.0f;
-
+    private Vector3 velocity;
     // Index of current waypoint
     private int waypointIndex = 0;
 
@@ -32,30 +32,35 @@ public class WaypointFollower : MonoBehaviour
         if (other.gameObject.tag == "Jump1" && Input.GetKeyDown(KeyCode.Space)) 
         {
             Debug.Log("Test");
+            velocity.y = speed;
             followingWaypoints1 = true;
             
         }
         if (other.gameObject.tag == "Jump2" && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Test");
+            velocity.y = speed;
             followingWaypoints2 = true;
 
         }
         if (other.gameObject.tag == "Jump3" && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Test");
+            velocity.y = speed;
             followingWaypoints3 = true;
 
         }
         if (other.gameObject.tag == "Jump4" && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Test");
+            velocity.y = speed;
             followingWaypoints4 = true;
 
         }
         if (other.gameObject.tag == "Jump5" && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Test");
+            velocity.y = speed;
             followingWaypoints5 = true;
 
         }
@@ -64,7 +69,11 @@ public class WaypointFollower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(followingWaypoints1 == true)
+        transform.position += velocity * Time.deltaTime;
+        velocity.x = 0;
+        velocity.z = 0;
+        velocity.y = 0;
+        if (followingWaypoints1 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<ThirdPersonController>().enabled = false;            
