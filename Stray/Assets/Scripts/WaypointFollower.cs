@@ -76,31 +76,36 @@ public class WaypointFollower : MonoBehaviour
         if (followingWaypoints1 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<ThirdPersonController>().enabled = false;            
+            GetComponent<ThirdPersonController>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             checkWaypoints1();
         }
         if (followingWaypoints2 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<ThirdPersonController>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             checkWaypoints2();
         }
         if (followingWaypoints3 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<ThirdPersonController>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             checkWaypoints3();
         }
         if (followingWaypoints4 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<ThirdPersonController>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             checkWaypoints4();
         }
         if (followingWaypoints5 == true)
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<ThirdPersonController>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
             checkWaypoints5();
         }
     }
@@ -123,6 +128,7 @@ public class WaypointFollower : MonoBehaviour
             followingWaypoints1 = false;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<ThirdPersonController>().enabled = true;
+            GetComponent<BoxCollider>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -144,6 +150,7 @@ public class WaypointFollower : MonoBehaviour
             followingWaypoints2 = false;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<ThirdPersonController>().enabled = true;
+            GetComponent<BoxCollider>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -166,6 +173,7 @@ public class WaypointFollower : MonoBehaviour
             followingWaypoints3 = false;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<ThirdPersonController>().enabled = true;
+            GetComponent<BoxCollider>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -187,6 +195,7 @@ public class WaypointFollower : MonoBehaviour
             followingWaypoints4 = false;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<ThirdPersonController>().enabled = true;
+            GetComponent<BoxCollider>().enabled = true;
             waypointIndex = 0;
         }
     }
@@ -208,6 +217,7 @@ public class WaypointFollower : MonoBehaviour
             followingWaypoints5 = false;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<ThirdPersonController>().enabled = true;
+            GetComponent<BoxCollider>().enabled = true;
             waypointIndex = 0;
         }
     }
