@@ -7,10 +7,13 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject overlay;
     public bool overlayon;
+    public AudioSource background;
     void Start()
     {
         overlay.SetActive(false);
         overlayon = false;
+        background = GetComponent<AudioSource>();
+        background.Play();
     }
 
     // Update is called once per frame
