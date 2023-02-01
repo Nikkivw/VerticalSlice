@@ -1362,6 +1362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zurk ultimate
       objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -4357,6 +4361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zurk ultimate (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4732,7 +4740,6 @@ GameObject:
   - component: {fileID: 662471792}
   - component: {fileID: 662471791}
   - component: {fileID: 662471790}
-  - component: {fileID: 662471788}
   - component: {fileID: 662471795}
   - component: {fileID: 662471796}
   m_Layer: 0
@@ -4742,19 +4749,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &662471788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662471787}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69dea47363d399498c099f63f42cc8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!114 &662471790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6476,6 +6470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zurk ultimate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -7641,6 +7639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zurk ultimate (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8489,6 +8491,10 @@ PrefabInstance:
     - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Name
       value: Zurk ultimate (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
@@ -9715,6 +9721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zurk ultimate (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -10318,7 +10328,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263469119}
-  m_LocalRotation: {x: -0.000000059604645, y: -0.000000025141805, z: 0.000000016310011, w: 1}
+  m_LocalRotation: {x: -0.000000059604645, y: -0.000000025141773, z: 0.000000016309992, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12823,6 +12833,10 @@ PrefabInstance:
     - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_Name
       value: Zurk ultimate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
@@ -19289,6 +19303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zurk ultimate (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8145959533844597940, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8811173536798594574, guid: 46e6cbbd0d0d4af4f8191ec5dfc7244d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -19785,7 +19803,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839088824}
-  m_LocalRotation: {x: -0.02864109, y: -0.0000000022648639, z: 0.0000000013787416, w: 0.9995898}
+  m_LocalRotation: {x: -0.02864109, y: -0.000000019432102, z: 0.000000011829345, w: 0.9995898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

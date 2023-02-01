@@ -112,14 +112,14 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoints1()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints1[waypointIndex];
-        
+        Transform targetWaypoint1 = waypoints1[waypointIndex];
+        Cat.transform.LookAt(new Vector3(0, targetWaypoint1.position.y, 0));
         // Move towards the waypoint
-        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint1.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
-        if (transform.position == targetWaypoint.position)
-        {    
-            Cat.transform.rotation = Quaternion.Euler(0, 160, 0);
+        if (transform.position == targetWaypoint1.position)
+        {
+            
             waypointIndex++;
         }
         // If the player has reached the end of the waypoints, allow them to move freely
@@ -135,14 +135,14 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoints2()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints2[waypointIndex];
+        Transform targetWaypoint2 = waypoints2[waypointIndex];
         // Move towards the waypoint
-        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint2.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
-        if (transform.position == targetWaypoint.position)
+        if (transform.position == targetWaypoint2.position)
         {
             waypointIndex++;
-            transform.LookAt(targetWaypoint);
+            transform.LookAt(targetWaypoint2);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints2.Length)
@@ -157,14 +157,14 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoints3()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints3[waypointIndex];
+        Transform targetWaypoint3 = waypoints3[waypointIndex];
         // Move towards the waypoint
-        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint3.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
-        if (transform.position == targetWaypoint.position)
+        if (transform.position == targetWaypoint3.position)
         {
             waypointIndex++;
-            transform.LookAt(targetWaypoint);
+            transform.LookAt(targetWaypoint3);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints3.Length)
@@ -180,14 +180,14 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoints4()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints4[waypointIndex];
+        Transform targetWaypoint4 = waypoints4[waypointIndex];
         // Move towards the waypoint
-        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint4.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
-        if (transform.position == targetWaypoint.position)
+        if (transform.position == targetWaypoint4.position)
         {
             waypointIndex++;
-            transform.LookAt(targetWaypoint);
+            transform.LookAt(targetWaypoint4);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints4.Length)
@@ -202,14 +202,14 @@ public class WaypointFollower : MonoBehaviour
     void checkWaypoints5()
     {
         // Get the current waypoint
-        Transform targetWaypoint = waypoints5[waypointIndex];
+        Transform targetWaypoint5 = waypoints5[waypointIndex];
         // Move towards the waypoint
-        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, speed * Time.deltaTime);
+        Cat.transform.position = Vector3.MoveTowards(transform.position, targetWaypoint5.position, speed * Time.deltaTime);
         // If the player has reached the waypoint, move to the next one
-        if (transform.position == targetWaypoint.position)
+        if (transform.position == targetWaypoint5.position)
         {
             waypointIndex++;
-            transform.LookAt(targetWaypoint);
+            transform.LookAt(targetWaypoint5);
         }
         // If the player has reached the end of the waypoints, allow them to move freely
         if (waypointIndex >= waypoints5.Length)
